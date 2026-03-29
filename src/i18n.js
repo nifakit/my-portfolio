@@ -72,7 +72,7 @@ const resources = {
       },
     },
   },
-  uk: {
+  ua: {
     translation: {
       nav: { about: "Про мене", skills: "Навички", projects: "Проєкти", contact: "Контакти" },
       hero: {

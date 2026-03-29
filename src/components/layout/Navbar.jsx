@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="flex items-center gap-4">
           
           <div className="flex items-center gap-1 bg-white/10 rounded-3xl p-1 border border-white/10">
-            {["en", "ru", "uk"].map((lng) => (
+            {["en", "ru", "ua"].map((lng) => (
               <button
                 key={lng}
                 onClick={() => i18n.changeLanguage(lng)}
@@ -54,7 +54,7 @@ const Navbar = () => {
             {t("nav.contact")}
           </a>
 
-          {/* Hamburger */}
+          
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-3 text-white"

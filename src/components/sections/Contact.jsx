@@ -113,14 +113,6 @@ const Contact = () => {
               </div>
             )}
 
-            <div className="mt-12 pt-8 border-t border-white/10 flex flex-col gap-4 text-sm">
-              <a href="mailto:nifakit3@gmail.com" className="flex items-center gap-4 hover:text-violet-400 transition-colors">
-                ✉️ nifakit3@gmail.com
-              </a>
-              <a href="https://github.com/nifakit" target="_blank" className="flex items-center gap-4 hover:text-violet-400 transition-colors">
-                🐙 github.com/nifakit
-              </a>
-            </div>
           </div>
         </div>
       </div>
