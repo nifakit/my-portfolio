@@ -1,16 +1,40 @@
-# React + Vite
+# nifakit — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, modern and premium portfolio website.
 
-Currently, two official plugins are available:
+## About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Personal portfolio of a beginner frontend developer.  
+Honest, minimalistic and focused on clean UI/UX with glassmorphism design.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** + **Vite**
+- **Tailwind CSS**
+- **i18next** — multilingual support (EN / RU / UK)
+- **EmailJS** — fully functional contact form
+- Glassmorphism + smooth animations
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Fully responsive design
+- Dark premium theme with living gradient background
+- Smooth scroll and reveal animations
+- Real working contact form (sends emails directly to me)
+- Multilingual interface
+- Honest and clean content with no exaggeration
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/nifakit/nifakit-portfolio.git
+
+# Go to project folder
+cd nifakit-portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
