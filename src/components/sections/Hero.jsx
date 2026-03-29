@@ -5,7 +5,7 @@ const Hero = () => {
 
   return (
     <section id="hero" className="min-h-screen flex items-center pt-20 relative px-6">
-      <div className="max-w-screen-2xl mx-auto w-full grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+      <div className="max-w-screen-2xl mx-auto w-full grid md:grid-cols-2 gap-12 md:gap-16 items-center">
         
         <div className="space-y-8 reveal text-center md:text-left">
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-semibold tracking-tighter leading-none text-white">
@@ -19,7 +19,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="#projects"
-              className="px-8 py-4 bg-white text-black rounded-3xl text-base font-medium flex items-center justify-center gap-2 hover:bg-violet-300 transition-all active:scale-95"
+              className="px-8 py-4 bg-white text-black rounded-3xl text-base font-medium flex items-center gap-2 hover:bg-violet-300 transition-all active:scale-95"
             >
               {t("hero.btnProjects")} →
             </a>
@@ -48,7 +48,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-12 left-1/2 flex flex-col items-center text-xs tracking-widest text-white/40">
+      {/* Scroll indicator — теперь ровно по центру */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-xs tracking-widest text-white/40">
         <div className="h-12 w-px bg-gradient-to-b from-transparent via-white/30 to-transparent" />
         SCROLL
       </div>

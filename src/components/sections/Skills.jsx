@@ -43,24 +43,22 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-28">
-      <div className="max-w-screen-2xl mx-auto px-8">
+      <div className="max-w-screen-2xl mx-auto px-6">
         <h2 className="text-5xl font-semibold tracking-tighter text-center mb-16 reveal">
           {t("skills.title")}
         </h2>
 
         <div className="space-y-16">
-          
           <div>
             <h3 className="text-xl font-medium mb-6 text-violet-300 text-center">{t("skills.frontend")}</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 gap-4">   {/* ← на телефоне в 2 колонки, на ПК как было */}
               {frontendSkills.map((skill) => <SkillCard key={skill.name} skill={skill} />)}
             </div>
           </div>
 
-          
           <div>
             <h3 className="text-xl font-medium mb-6 text-cyan-300 text-center">{t("skills.backend")}</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 gap-4">
               {backendSkills.map((skill) => <SkillCard key={skill.name} skill={skill} />)}
             </div>
           </div>

@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="max-w-screen-2xl mx-auto px-6 py-5 flex items-center justify-between">
         <a href="#" className="text-3xl font-semibold tracking-tighter text-white">nifakit</a>
 
-        {/* Desktop */}
+        {/* Desktop — без изменений */}
         <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
             <a
@@ -31,14 +31,14 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Language + Contact button */}
         <div className="flex items-center gap-4">
-          <div className="hidden sm:flex items-center gap-1 bg-white/10 rounded-3xl p-1 border border-white/10">
+          {/* Language switcher — теперь виден и на мобильных */}
+          <div className="flex items-center gap-1 bg-white/10 rounded-3xl p-1 border border-white/10">
             {["en", "ru", "uk"].map((lng) => (
               <button
                 key={lng}
                 onClick={() => i18n.changeLanguage(lng)}
-                className={`px-4 py-1.5 text-xs font-medium rounded-3xl transition-all ${
+                className={`px-3 py-1 text-xs font-medium rounded-3xl transition-all ${
                   i18n.language === lng ? "bg-white text-black shadow-inner" : "text-white hover:bg-white/20"
                 }`}
               >
@@ -66,9 +66,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile full-screen menu */}
+      {/* Mobile menu — чистое и без дублирования */}
       {isOpen && (
-        <div className="md:hidden fixed inset-0 bg-zinc-950/95 backdrop-blur-2xl z-50 pt-20 flex flex-col items-center justify-center gap-10 text-2xl font-medium">
+        <div className="md:hidden glass border-t border-white/10 px-6 py-8 flex flex-col gap-8 text-lg font-medium">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -79,13 +79,6 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <a
-            href="#contact"
-            onClick={() => setIsOpen(false)}
-            className="mt-6 px-12 py-5 bg-white text-black rounded-3xl text-xl font-medium"
-          >
-            {t("nav.contact")}
-          </a>
         </div>
       )}
     </nav>
