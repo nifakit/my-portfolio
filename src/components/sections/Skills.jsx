@@ -41,6 +41,18 @@ const Skills = () => {
     </div>
   );
 
+  const MobileSkillCard = ({ skill }) => (
+    <div className="glass rounded-3xl p-5 text-center">
+      <div className="font-medium text-lg mb-2">{skill.name}</div>
+      <div className={`text-xs px-5 py-1.5 inline-block rounded-3xl font-medium ${
+        skill.level === "advanced" ? "bg-emerald-400 text-black" :
+        skill.level === "intermediate" ? "bg-amber-400 text-black" : "bg-zinc-500 text-white"
+      }`}>
+        {t(`skills.level.${skill.level}`)}
+      </div>
+    </div>
+  );
+
   return (
     <section id="skills" className="py-28">
       <div className="max-w-screen-2xl mx-auto px-6">
@@ -49,17 +61,25 @@ const Skills = () => {
         </h2>
 
         <div className="space-y-16">
+          
           <div>
             <h3 className="text-xl font-medium mb-6 text-violet-300 text-center">{t("skills.frontend")}</h3>
-            <div className="grid grid-cols-2 gap-4">   
+            <div className="hidden md:grid grid-cols-4 gap-4">
               {frontendSkills.map((skill) => <SkillCard key={skill.name} skill={skill} />)}
+            </div>
+            <div className="grid md:hidden grid-cols-2 gap-4">
+              {frontendSkills.map((skill) => <MobileSkillCard key={skill.name} skill={skill} />)}
             </div>
           </div>
 
+          
           <div>
             <h3 className="text-xl font-medium mb-6 text-cyan-300 text-center">{t("skills.backend")}</h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="hidden md:grid grid-cols-4 gap-4">
               {backendSkills.map((skill) => <SkillCard key={skill.name} skill={skill} />)}
+            </div>
+            <div className="grid md:hidden grid-cols-2 gap-4">
+              {backendSkills.map((skill) => <MobileSkillCard key={skill.name} skill={skill} />)}
             </div>
           </div>
         </div>

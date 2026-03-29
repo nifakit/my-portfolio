@@ -48,7 +48,6 @@ const Hero = () => {
         </div>
       </div>
 
-      
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-xs tracking-widest text-white/40">
         <div className="h-12 w-px bg-gradient-to-b from-transparent via-white/30 to-transparent" />
         SCROLL

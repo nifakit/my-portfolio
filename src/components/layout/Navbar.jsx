@@ -54,7 +54,7 @@ const Navbar = () => {
             {t("nav.contact")}
           </a>
 
-          
+          {/* Hamburger */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-3 text-white"
@@ -68,13 +68,13 @@ const Navbar = () => {
 
      
       {isOpen && (
-        <div className="md:hidden glass border-t border-white/10 px-6 py-8 flex flex-col gap-8 text-lg font-medium">
+        <div className="md:hidden glass border-t border-white/10 px-6 py-6 flex flex-col gap-6 text-lg font-medium text-white">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="hover:text-violet-400 transition-colors"
+              className="hover:text-violet-400 transition-colors py-2"
             >
               {link.name}
             </a>
