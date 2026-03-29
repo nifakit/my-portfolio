@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="max-w-screen-2xl mx-auto px-6 py-5 flex items-center justify-between">
         <a href="#" className="text-3xl font-semibold tracking-tighter text-white">nifakit</a>
 
-        {/* Desktop — без изменений */}
+        
         <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
             <a
@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          {/* Language switcher — теперь виден и на мобильных */}
+          
           <div className="flex items-center gap-1 bg-white/10 rounded-3xl p-1 border border-white/10">
             {["en", "ru", "uk"].map((lng) => (
               <button
@@ -54,7 +54,7 @@ const Navbar = () => {
             {t("nav.contact")}
           </a>
 
-          {/* Mobile hamburger */}
+          
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-3 text-white"
@@ -66,7 +66,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu — чистое и без дублирования */}
+     
       {isOpen && (
         <div className="md:hidden glass border-t border-white/10 px-6 py-8 flex flex-col gap-8 text-lg font-medium">
           {navLinks.map((link) => (

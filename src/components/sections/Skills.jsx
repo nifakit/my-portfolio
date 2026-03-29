@@ -51,7 +51,7 @@ const Skills = () => {
         <div className="space-y-16">
           <div>
             <h3 className="text-xl font-medium mb-6 text-violet-300 text-center">{t("skills.frontend")}</h3>
-            <div className="grid grid-cols-2 gap-4">   {/* ← на телефоне в 2 колонки, на ПК как было */}
+            <div className="grid grid-cols-2 gap-4">   
               {frontendSkills.map((skill) => <SkillCard key={skill.name} skill={skill} />)}
             </div>
           </div>
