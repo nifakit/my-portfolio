@@ -19,7 +19,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="#projects"
-              className="px-8 py-4 bg-white text-black rounded-3xl text-base font-medium flex items-center gap-2 hover:bg-violet-300 transition-all active:scale-95"
+              className="min-w-[170px] px-8 py-4 bg-white text-black rounded-3xl text-base font-medium flex items-center justify-center gap-2 hover:-translate-y-1 transition-all active:scale-95"
             >
               {t("hero.btnProjects")} →
             </a>
