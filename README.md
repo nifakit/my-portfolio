@@ -31,7 +31,7 @@ Honest, minimalistic and focused on clean UI/UX with glassmorphism design.
 git clone https://github.com/nifakit/nifakit-portfolio.git
 
 # Go to project folder
-cd nifakit-portfolio
+cd Portfolio
 
 # Install dependencies
 npm install
