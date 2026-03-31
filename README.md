@@ -28,7 +28,7 @@ Honest, minimalistic and focused on clean UI/UX with glassmorphism design.
 
 ```bash
 # Clone the repository
-git clone https://github.com/nifakit/nifakit-portfolio.git
+git clone https://github.com/nifakit/my-portfolio.git
 
 # Go to project folder
 cd Portfolio
