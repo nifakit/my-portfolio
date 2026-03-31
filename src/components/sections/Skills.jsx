@@ -24,33 +24,32 @@ const backendSkills = [
 const Skills = () => {
   const { t } = useTranslation();
 
-  const getProgress = (level) => {
-    if (level === "advanced") return 92;
-    if (level === "intermediate") return 68;
-    return 35;
-  };
-
   const SkillCard = ({ skill }) => {
-    const progress = getProgress(skill.level);
     return (
-      <div className="group glass rounded-3xl p-6 transition-all duration-300 hover:scale-[1.03] hover:border-white/20 border border-white/10 bg-white/5 backdrop-blur-3xl">
-        <div className="flex items-start gap-4">
-          <div className={`w-12 h-12 rounded-2xl ${skill.color} flex-shrink-0 flex items-center justify-center text-white text-2xl font-semibold shadow-inner`}>
+      <div className="group glass rounded-3xl p-5 transition-all duration-300 hover:scale-[1.03] hover:border-white/25 border border-white/10 bg-white/5 backdrop-blur-3xl">
+        <div className="flex items-center gap-4">
+          {/* Иконка — как в оригинале, но с чуть лучшей тенью */}
+          <div
+            className={`w-12 h-12 rounded-2xl ${skill.color} flex-shrink-0 flex items-center justify-center text-white text-2xl font-semibold shadow-inner group-hover:scale-110 transition-transform`}
+          >
             {skill.name.slice(0, 2)}
           </div>
-          <div className="flex-1 min-w-0 pt-1">
-            <div className="font-semibold text-lg mb-4 tracking-tight">{skill.name}</div>
-            <div className="h-2 bg-white/10 rounded-3xl overflow-hidden mb-4">
-              <div 
-                className={`h-full rounded-3xl transition-all ${skill.color}`}
-                style={{ width: `${progress}%` }}
-              />
+
+          {/* Название + уровень сбоку (на одной строке, не растянут) */}
+          <div className="flex-1 flex items-center justify-between min-w-0">
+            <div className="font-semibold text-lg tracking-tight line-clamp-1">
+              {skill.name}
             </div>
-            <div className={`inline-flex text-xs px-5 py-1.5 rounded-3xl font-medium ${
-              skill.level === "advanced" ? "bg-emerald-400/10 text-emerald-300 border border-emerald-400/30" :
-              skill.level === "intermediate" ? "bg-amber-400/10 text-amber-300 border border-amber-400/30" : 
-              "bg-zinc-400/10 text-zinc-400 border border-zinc-400/30"
-            }`}>
+
+            <div
+              className={`inline-flex text-xs px-4 py-1.5 rounded-3xl font-medium whitespace-nowrap ${
+                skill.level === "advanced"
+                  ? "bg-emerald-400/10 text-emerald-300 border border-emerald-400/30"
+                  : skill.level === "intermediate"
+                  ? "bg-amber-400/10 text-amber-300 border border-amber-400/30"
+                  : "bg-zinc-400/10 text-zinc-400 border border-zinc-400/30"
+              }`}
+            >
               {t(`skills.level.${skill.level}`)}
             </div>
           </div>
@@ -67,6 +66,7 @@ const Skills = () => {
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-16">
+          {/* Frontend */}
           <div>
             <h3 className="text-2xl font-medium text-violet-300 text-center lg:text-left mb-8 flex items-center gap-3 justify-center lg:justify-start">
               <span className="w-3 h-3 rounded-full bg-violet-400"></span>
@@ -79,6 +79,7 @@ const Skills = () => {
             </div>
           </div>
 
+          {/* Backend */}
           <div>
             <h3 className="text-2xl font-medium text-cyan-300 text-center lg:text-left mb-8 flex items-center gap-3 justify-center lg:justify-start">
               <span className="w-3 h-3 rounded-full bg-cyan-400"></span>

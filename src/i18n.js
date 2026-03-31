@@ -7,14 +7,23 @@ const resources = {
       nav: { about: "About", skills: "Skills", projects: "Projects", contact: "Contact" },
       hero: {
         title: "nifakit",
-        subtitle: "Aspiring frontend developer",
-        desc: "Hi. I'm learning to create clean and modern interfaces with React and Tailwind CSS. Currently working on pet projects and continuing to grow.",
-        btnProjects: "My projects",
-        btnContact: "Get in touch",
+        subtitle: "Frontend Developer",
+        desc: "Hi. I build clean, modern and responsive interfaces using React and Tailwind CSS. I am constantly improving my skills through personal projects and self-education.",
+        btnProjects: "My Projects",
+        btnContact: "Get in Touch",
       },
       about: {
-        title: "About me",
-        text: "My name is Nikita (nifakit). I'm a beginner frontend developer. I enjoy creating clean and modern interfaces with React and Tailwind CSS. I have no commercial experience yet, but I regularly work on pet projects and keep learning."
+        title: "About Me",
+        text: "My name is Nikita (nifakit). I am a frontend developer with a solid foundation in building modern web interfaces. I completed my training at IT Step Academy, where I gained structured knowledge in web development. My primary stack includes React and Tailwind CSS. I have no commercial experience yet, but I actively apply my skills in personal projects, continuously improving my craft and exploring best practices in frontend development.",
+        status: {
+          available:     "Open to work",
+          availableDesc: "Ready for job offers and collaboration",
+          learning:      "Currently learning",
+          focus:         "What I'm working on",
+          focus1:        "Building personal projects to strengthen my skills",
+          focus2:        "Deepening knowledge of React ecosystem",
+          focus3:        "Exploring backend fundamentals and full-stack development",
+        },
       },
       skills: {
         title: "Skills",
@@ -23,17 +32,17 @@ const resources = {
         level: { advanced: "Advanced", intermediate: "Intermediate", beginner: "Beginner" }
       },
       projects: {
-        title: "Pet Projects",
+        title: "Projects",
         subtitle: "No projects yet",
-        coming: "But they are coming soon...",
-        desc: "I'm actively working on new projects right now. Stay tuned!"
+        coming: "But they're coming soon...",
+        desc: "I am actively working on new projects right now. Stay tuned for updates!"
       },
       contact: {
-        title: "Get in touch",
+        title: "Get in Touch",
         name: "Name",
         email: "Email",
         message: "Message",
-        send: "Send",
+        send: "Send Message",
       },
     },
   },
@@ -42,14 +51,23 @@ const resources = {
       nav: { about: "Обо мне", skills: "Навыки", projects: "Проекты", contact: "Контакты" },
       hero: {
         title: "nifakit",
-        subtitle: "Начинающий frontend-разработчик",
-        desc: "Привет. Я учусь создавать чистые и современные интерфейсы с React и Tailwind CSS. Сейчас делаю пет-проекты и продолжаю развиваться.",
+        subtitle: "Frontend-разработчик",
+        desc: "Привет. Я создаю чистые, современные и адаптивные интерфейсы с использованием React и Tailwind CSS. Постоянно совершенствую навыки через личные проекты и самообучение.",
         btnProjects: "Мои проекты",
         btnContact: "Связаться",
       },
       about: {
         title: "Обо мне",
-        text: "Меня зовут Никита (nifakit). Я начинающий frontend-разработчик. Мне нравится создавать чистые и современные интерфейсы с React и Tailwind CSS. Коммерческого опыта пока нет, но я регулярно делаю пет-проекты и продолжаю учиться."
+        text: "Меня зовут Никита (nifakit). Я frontend-разработчик с прочной базой в создании современных веб-интерфейсов. Прошёл обучение в IT Step Academy, где получил структурированные знания в области веб-разработки. Мой основной стек — React и Tailwind CSS. Коммерческого опыта пока нет, однако я активно применяю полученные знания в пет-проектах, постоянно совершенствуя навыки и изучая лучшие практики frontend-разработки.",
+        status: {
+          available:     "Открыт к предложениям",
+          availableDesc: "Готов к работе и сотрудничеству",
+          learning:      "Сейчас изучаю",
+          focus:         "Над чем работаю",
+          focus1:        "Создаю личные проекты для закрепления навыков",
+          focus2:        "Углубляю знания экосистемы React",
+          focus3:        "Изучаю основы backend и full-stack разработки",
+        },
       },
       skills: {
         title: "Навыки",
@@ -58,10 +76,10 @@ const resources = {
         level: { advanced: "Продвинутый", intermediate: "Средний", beginner: "Начальный" }
       },
       projects: {
-        title: "Пет-проекты",
-        subtitle: "Пока нет проектов",
+        title: "Проекты",
+        subtitle: "Проектов пока нет",
         coming: "Но они уже скоро появятся...",
-        desc: "Я активно работаю над новыми проектами прямо сейчас. Следи за обновлениями!"
+        desc: "Я активно работаю над новыми проектами прямо сейчас. Следите за обновлениями!"
       },
       contact: {
         title: "Связаться",
@@ -77,14 +95,23 @@ const resources = {
       nav: { about: "Про мене", skills: "Навички", projects: "Проєкти", contact: "Контакти" },
       hero: {
         title: "nifakit",
-        subtitle: "Початківець frontend-розробник",
-        desc: "Привіт. Я вчуся створювати чисті та сучасні інтерфейси з React і Tailwind CSS. Зараз роблю пет-проєкти і продовжую розвиватися.",
+        subtitle: "Frontend-розробник",
+        desc: "Привіт. Я створюю чисті, сучасні та адаптивні інтерфейси з використанням React і Tailwind CSS. Постійно вдосконалюю навички через особисті проєкти та самонавчання.",
         btnProjects: "Мої проєкти",
         btnContact: "Зв'язатися",
       },
       about: {
         title: "Про мене",
-        text: "Мене звуть Никита (nifakit). Я початківець frontend-розробник. Мені подобається створювати чисті та сучасні інтерфейси з React і Tailwind CSS. Комерційного досвіду поки немає, але я регулярно роблю пет-проєкти і продовжую вчитися."
+        text: "Мене звуть Микита (nifakit). Я frontend-розробник із міцною базою у створенні сучасних веб-інтерфейсів. Пройшов навчання в IT Step Academy, де отримав структуровані знання у сфері веб-розробки. Мій основний стек — React і Tailwind CSS. Комерційного досвіду поки немає, проте я активно застосовую отримані знання в пет-проєктах, постійно вдосконалюючи навички та вивчаючи найкращі практики frontend-розробки.",
+        status: {
+          available:     "Відкритий до пропозицій",
+          availableDesc: "Готовий до роботи та співпраці",
+          learning:      "Зараз вивчаю",
+          focus:         "Над чим працюю",
+          focus1:        "Створюю особисті проєкти для закріплення навичок",
+          focus2:        "Поглиблюю знання екосистеми React",
+          focus3:        "Вивчаю основи backend і full-stack розробки",
+        },
       },
       skills: {
         title: "Навички",
@@ -93,10 +120,10 @@ const resources = {
         level: { advanced: "Просунутий", intermediate: "Середній", beginner: "Початковий" }
       },
       projects: {
-        title: "Пет-проєкти",
-        subtitle: "Поки немає проєктів",
+        title: "Проєкти",
+        subtitle: "Проєктів поки немає",
         coming: "Але вони вже скоро з'являться...",
-        desc: "Я активно працюю над новими проєктами прямо зараз. Слідкуй за оновленнями!"
+        desc: "Я активно працюю над новими проєктами прямо зараз. Слідкуйте за оновленнями!"
       },
       contact: {
         title: "Зв'язатися",
