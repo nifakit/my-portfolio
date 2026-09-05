@@ -12,7 +12,6 @@ import {
   User,
 } from "lucide-react";
 
-// ---- typewriter effect: types the full line, pauses, erases, pauses, repeats ----
 const Typewriter = ({
   text,
   typeSpeed = 90,
@@ -22,7 +21,7 @@ const Typewriter = ({
   className = "",
 }) => {
   const [displayed, setDisplayed] = useState("");
-  const [phase, setPhase] = useState("typing"); // "typing" | "deleting"
+  const [phase, setPhase] = useState("typing"); 
 
   useEffect(() => {
     if (!text) return;
@@ -57,8 +56,6 @@ const Typewriter = ({
   );
 };
 
-// ---- magnetic wrapper: element drifts toward the cursor, snaps back on leave ----
-// softened: lower pull strength + smoother, slower return
 const Magnetic = ({ children, strength = 0.15, className = "" }) => {
   const ref = useRef(null);
   const [pos, setPos] = useState({ x: 0, y: 0 });
@@ -178,7 +175,7 @@ const Hero = () => {
               style={{ animationDelay: "7s" }}
             />
 
-            {/* floating chips, same idea as the reference (not a copy of the artwork) */}
+            
             <div className="float-chip absolute -top-4 -left-4 w-16 h-11 rounded-xl bg-white/10 border border-white/15 backdrop-blur-xl flex items-center justify-center">
               <MessageSquare className="w-5 h-5 text-white/70" />
             </div>
@@ -196,7 +193,7 @@ const Hero = () => {
             </div>
 
             <div className="glass absolute inset-0 m-auto w-72 h-72 sm:w-72 sm:h-72 rounded-full flex items-center justify-center border border-white/20 shadow-[0_0_70px_-20px] shadow-violet-400/50 overflow-hidden">
-              {/* drop a photo at /public/avatar.png to show it here — falls back to a plain avatar placeholder */}
+              
               <img
                 src="src\assets\avatar.jpg"
                 alt={t("hero.title")}

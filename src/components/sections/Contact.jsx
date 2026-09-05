@@ -77,7 +77,7 @@ const Contact = () => {
                 {isSending ? (
                   <>
                     <span className="animate-spin h-4 w-4 border-2 border-black/30 border-t-black rounded-full" />
-                    Отправляется...
+                    Sending...
                   </>
                 ) : (
                   <>
@@ -92,9 +92,9 @@ const Contact = () => {
             {isSent && (
               <div className="absolute inset-0 bg-zinc-950/95 backdrop-blur-2xl flex flex-col items-center justify-center z-20 rounded-3xl">
                 <div className="text-7xl mb-6">✅</div>
-                <p className="text-3xl font-medium text-white mb-2">Сообщение отправлено!</p>
+                <p className="text-3xl font-medium text-white mb-2">Message sent!</p>
                 <p className="text-zinc-400 text-center max-w-xs">
-                  Спасибо! Я отвечу как можно скорее.
+                  Thanks!
                 </p>
               </div>
             )}
@@ -108,7 +108,7 @@ const Contact = () => {
                   onClick={() => setError(false)}
                   className="mt-8 px-8 py-3 text-sm border border-red-400 rounded-3xl hover:bg-red-900 transition-all"
                 >
-                  Попробовать ещё раз
+                  Try again
                 </button>
               </div>
             )}
